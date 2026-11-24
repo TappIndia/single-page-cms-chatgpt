@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 use CodeIgniter\Router\RouteCollection;
 
@@ -33,4 +33,9 @@ $routes->post('admin/media/upload', 'Admin\SiteMedia::upload');
 $routes->get('admin/media/view/(:num)', 'Admin\SiteMedia::view/$1');
 
 $routes->get('admin/domains', 'Admin\SiteDomain::index');
+$routes->get('admin/domains/create', 'Admin\SiteDomain::create');
+$routes->post('admin/domains/store', 'Admin\SiteDomain::store');
+$routes->get('admin/domains/edit/(:num)', 'Admin\SiteDomain::edit/$1');
+$routes->post('admin/domains/update/(:num)', 'Admin\SiteDomain::update/$1');
 
+$routes->post('admin/domains/delete/(:num)', 'Admin\SiteDomain::delete/$1');

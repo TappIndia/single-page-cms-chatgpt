@@ -2,10 +2,27 @@
 
 <?= $this->section('content') ?>
 
+<?php if (session()->getFlashdata('success')): ?>
+    <div class="alert alert-success alert-dismissible fade show">
+        <?= esc(session()->getFlashdata('success')) ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+<?php endif ?>
+
+<?php if (session()->getFlashdata('error')): ?>
+    <div class="alert alert-danger alert-dismissible fade show">
+        <?= esc(session()->getFlashdata('error')) ?>
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+<?php endif ?>
+
 <div class="d-flex justify-content-between align-items-center mb-4">
     <div>
         <h3 class="mb-1">Website Domains</h3>
         <p class="text-muted mb-0">Manage domains connected to your websites.</p>
+    </div>
+    <a href="<?= site_url('admin/domains/create') ?>" class="btn btn-primary">Add Domain</a>
+<div>
     </div>
 </div>
 
@@ -22,6 +39,7 @@
                         <th>Verified</th>
                         <th>Status</th>
                         <th>Created</th>
+                    <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -43,11 +61,27 @@
                                 </td>
                                 <td><?= esc(ucfirst($item['status'])) ?></td>
                                 <td><?= esc($item['created_at']) ?></td>
+                                <td>
+                                    <a href="<?= site_url('admin/domains/edit/' . $item['id']) ?>"
+                                       class="btn btn-sm btn-outline-primary">
+                                        Edit
+                                    </a>
+
+                                    <form action="<?= site_url('admin/domains/delete/' . $item['id']) ?>"
+                                          method="post"
+                                          class="d-inline"
+                                          onsubmit="return confirm('Are you sure you want to delete this domain?');">
+                                        <?= csrf_field() ?>
+                                        <button type="submit" class="btn btn-sm btn-outline-danger">
+                                            Delete
+                                        </button>
+                                    </form>
+                                </td>
                             </tr>
                         <?php endforeach ?>
                     <?php else: ?>
                         <tr>
-                            <td colspan="7" class="text-center text-muted py-4">
+                            <td colspan="8" class="text-center text-muted py-4">
                                 No domains found.
                             </td>
                         </tr>
@@ -59,3 +93,4 @@
 </div>
 
 <?= $this->endSection() ?>
+
