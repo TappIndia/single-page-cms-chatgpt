@@ -25,3 +25,9 @@ $routes->get('admin/site-sections', 'Admin\SiteSection::index');
 $routes->get('admin/design-settings', 'Admin\SiteDesignSetting::index');
 
 $routes->get('admin/media', 'Admin\SiteMedia::index');
+
+$routes->get('admin/media/upload', 'Admin\SiteMedia::create');
+
+$routes->post('admin/media/upload', 'Admin\SiteMedia::upload');
+
+$routes->get('admin/media/view/(:num)', 'Admin\SiteMedia::view/$1');

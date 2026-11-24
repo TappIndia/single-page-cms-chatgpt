@@ -4,6 +4,18 @@
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2>Website Media</h2>
+    <?php if (session()->getFlashdata('success')): ?>
+        <div class="alert alert-success">
+            <?= esc(session()->getFlashdata('success')) ?>
+        </div>
+    <?php endif ?>
+
+    <?php if (session()->getFlashdata('error')): ?>
+        <div class="alert alert-danger">
+            <?= esc(session()->getFlashdata('error')) ?>
+        </div>
+    <?php endif ?>
+    <a href="<?= site_url('admin/media/upload') ?>" class="btn btn-primary">Upload Media</a>
     <span class="badge bg-primary">
         Total Files: <?= count($media) ?>
     </span>
@@ -17,6 +29,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Website</th>
+                        <th>Preview</th>
                         <th>File Name</th>
                         <th>File Type</th>
                         <th>MIME Type</th>
@@ -32,6 +45,20 @@
                             <tr>
                                 <td><?= esc($item['id']) ?></td>
                                 <td><?= esc($item['site_name']) ?></td>
+                                <td>
+                                    <?php if ($item['file_type'] === 'image'): ?>
+                                        <img
+                                            src="<?= site_url('admin/media/view/' . $item['id']) ?>"
+                                            alt="<?= esc($item['alt_text'] ?? '') ?>"
+                                            style="width:70px;height:55px;object-fit:cover;"
+                                            class="rounded border"
+                                        >
+                                    <?php elseif ($item['file_type'] === 'document'): ?>
+                                        <a href="<?= site_url('admin/media/view/' . $item['id']) ?>" target="_blank">
+                                            View Document
+                                        </a>
+                                    <?php endif ?>
+                                </td>
                                 <td>
                                     <strong><?= esc($item['original_name']) ?></strong>
                                     <br>
@@ -67,3 +94,4 @@
 </div>
 
 <?= $this->endSection() ?>
+
