@@ -19,3 +19,5 @@ $routes->get('admin/section-types', 'Admin\SectionType::index');
 $routes->get('admin/section-variations', 'Admin\SectionVariation::index');
 
 $routes->get('admin/template-section-variations', 'Admin\TemplateSectionVariation::index');
+
+$routes->get('admin/site-sections', 'Admin\SiteSection::index');
