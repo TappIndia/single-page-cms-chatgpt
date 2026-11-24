@@ -23,3 +23,5 @@ $routes->get('admin/template-section-variations', 'Admin\TemplateSectionVariatio
 $routes->get('admin/site-sections', 'Admin\SiteSection::index');
 
 $routes->get('admin/design-settings', 'Admin\SiteDesignSetting::index');
+
+$routes->get('admin/media', 'Admin\SiteMedia::index');
