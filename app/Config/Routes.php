@@ -33,9 +33,16 @@ $routes->post('admin/media/upload', 'Admin\SiteMedia::upload');
 $routes->get('admin/media/view/(:num)', 'Admin\SiteMedia::view/$1');
 
 $routes->get('admin/domains', 'Admin\SiteDomain::index');
+$routes->get('admin/pages', 'Admin\SitePage::index');
+$routes->get('admin/pages/create', 'Admin\SitePage::create');
+$routes->post('admin/pages/store', 'Admin\SitePage::store');
+$routes->get('admin/pages/edit/(:num)', 'Admin\SitePage::edit/$1');
+$routes->post('admin/pages/update/(:num)', 'Admin\SitePage::update/$1');
+$routes->post('admin/pages/delete/(:num)', 'Admin\SitePage::delete/$1');
 $routes->get('admin/domains/create', 'Admin\SiteDomain::create');
 $routes->post('admin/domains/store', 'Admin\SiteDomain::store');
 $routes->get('admin/domains/edit/(:num)', 'Admin\SiteDomain::edit/$1');
 $routes->post('admin/domains/update/(:num)', 'Admin\SiteDomain::update/$1');
 
 $routes->post('admin/domains/delete/(:num)', 'Admin\SiteDomain::delete/$1');
+
