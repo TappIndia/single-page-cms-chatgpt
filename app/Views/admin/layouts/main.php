@@ -85,6 +85,7 @@
 
                 <a href="<?= site_url('admin/templates') ?>" class="<?= uri_string() === 'admin/templates' ? 'active' : '' ?>">Templates</a>
                 <a href="<?= site_url('admin/section-types') ?>" class="<?= uri_string() === 'admin/section-types' ? 'active' : '' ?>">Sections</a>
+                <a href="<?= site_url('admin/section-variations') ?>" class="<?= uri_string() === 'admin/section-variations' ? 'active' : '' ?>">Section Variations</a>
                 <a href="#" class="disabled">Media</a>
                 <a href="#" class="disabled">Settings</a>
 
@@ -106,5 +107,6 @@
 
 </body>
 </html>
+
 
 
