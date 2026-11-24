@@ -88,6 +88,7 @@
                 <a href="<?= site_url('admin/section-variations') ?>" class="<?= uri_string() === 'admin/section-variations' ? 'active' : '' ?>">Section Variations</a>
                 <a href="<?= site_url('admin/template-section-variations') ?>" class="<?= uri_string() === 'admin/template-section-variations' ? 'active' : '' ?>">Template Section Variations</a>
                 <a href="<?= site_url('admin/site-sections') ?>" class="<?= uri_string() === 'admin/site-sections' ? 'active' : '' ?>">Website Sections</a>
+                <a href="<?= site_url('admin/design-settings') ?>" class="<?= uri_string() === 'admin/design-settings' ? 'active' : '' ?>">Design Settings</a>
                 <a href="#" class="disabled">Media</a>
                 <a href="#" class="disabled">Settings</a>
 
@@ -109,6 +110,7 @@
 
 </body>
 </html>
+
 
 
 
