@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use CodeIgniter\Router\RouteCollection;
 
@@ -31,3 +31,6 @@ $routes->get('admin/media/upload', 'Admin\SiteMedia::create');
 $routes->post('admin/media/upload', 'Admin\SiteMedia::upload');
 
 $routes->get('admin/media/view/(:num)', 'Admin\SiteMedia::view/$1');
+
+$routes->get('admin/domains', 'Admin\SiteDomain::index');
+

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -90,6 +90,9 @@
                 <a href="<?= site_url('admin/site-sections') ?>" class="<?= uri_string() === 'admin/site-sections' ? 'active' : '' ?>">Website Sections</a>
                 <a href="<?= site_url('admin/design-settings') ?>" class="<?= uri_string() === 'admin/design-settings' ? 'active' : '' ?>">Design Settings</a>
                 <a href="<?= site_url('admin/media') ?>" class="<?= uri_string() === 'admin/media' ? 'active' : '' ?>">Media</a>
+<a href="<?= site_url('admin/domains') ?>" class="<?= url_is('admin/domains') ? 'active' : '' ?>">
+    <i class="bi bi-globe me-2"></i>Domains
+</a>
                 <a href="#" class="disabled">Settings</a>
 
             </div>
@@ -110,6 +113,8 @@
 
 </body>
 </html>
+
+
 
 
 
