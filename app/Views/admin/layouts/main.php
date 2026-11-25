@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
         .sidebar a {
             display: block;
             color: #ced4da;
-            padding: 13px 20px;
+            padding: 12px 20px;
             text-decoration: none;
             transition: 0.2s;
         }
@@ -41,9 +41,12 @@
             color: white;
         }
 
-        .sidebar a.disabled {
-            color: #777;
-            cursor: not-allowed;
+        .sidebar-heading {
+            color: #8d969e;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 18px 20px 6px;
         }
 
         .main-content {
@@ -73,27 +76,77 @@
         <aside class="col-md-2 sidebar p-0">
             <div class="py-3">
 
+                <div class="sidebar-heading">Main</div>
+
                 <a href="<?= site_url('admin') ?>"
                    class="<?= uri_string() === 'admin' ? 'active' : '' ?>">
                     Dashboard
                 </a>
 
                 <a href="<?= site_url('admin/websites') ?>"
-                   class="<?= uri_string() === 'admin/websites' ? 'active' : '' ?>">
+                   class="<?= url_is('admin/websites*') ? 'active' : '' ?>">
                     Websites
                 </a>
 
-                <a href="<?= site_url('admin/templates') ?>" class="<?= uri_string() === 'admin/templates' ? 'active' : '' ?>">Templates</a>
-                <a href="<?= site_url('admin/section-types') ?>" class="<?= uri_string() === 'admin/section-types' ? 'active' : '' ?>">Sections</a>
-                <a href="<?= site_url('admin/section-variations') ?>" class="<?= uri_string() === 'admin/section-variations' ? 'active' : '' ?>">Section Variations</a>
-                <a href="<?= site_url('admin/template-section-variations') ?>" class="<?= uri_string() === 'admin/template-section-variations' ? 'active' : '' ?>">Template Section Variations</a>
-                <a href="<?= site_url('admin/site-sections') ?>" class="<?= uri_string() === 'admin/site-sections' ? 'active' : '' ?>">Website Sections</a>
-                <a href="<?= site_url('admin/design-settings') ?>" class="<?= uri_string() === 'admin/design-settings' ? 'active' : '' ?>">Design Settings</a>
-                <a href="<?= site_url('admin/media') ?>" class="<?= uri_string() === 'admin/media' ? 'active' : '' ?>">Media</a>
-<a href="<?= site_url('admin/domains') ?>" class="<?= url_is('admin/domains') ? 'active' : '' ?>">
-    <i class="bi bi-globe me-2"></i>Domains
-</a>
-                <a href="#" class="disabled">Settings</a>
+                <div class="sidebar-heading">Templates</div>
+
+                <a href="<?= site_url('admin/templates') ?>"
+                   class="<?= url_is('admin/templates*') ? 'active' : '' ?>">
+                    Templates
+                </a>
+
+                <a href="<?= site_url('admin/section-types') ?>"
+                   class="<?= url_is('admin/section-types*') ? 'active' : '' ?>">
+                    Section Types
+                </a>
+
+                <a href="<?= site_url('admin/section-variations') ?>"
+                   class="<?= url_is('admin/section-variations*') ? 'active' : '' ?>">
+                    Section Variations
+                </a>
+
+                <a href="<?= site_url('admin/template-section-variations') ?>"
+                   class="<?= url_is('admin/template-section-variations*') ? 'active' : '' ?>">
+                    Template Section Variations
+                </a>
+
+                <div class="sidebar-heading">Website Content</div>
+
+                <a href="<?= site_url('admin/site-sections') ?>"
+                   class="<?= url_is('admin/site-sections*') ? 'active' : '' ?>">
+                    Website Sections
+                </a>
+
+                <a href="<?= site_url('admin/pages') ?>"
+                   class="<?= url_is('admin/pages*') ? 'active' : '' ?>">
+                    Pages
+                </a>
+
+                <a href="<?= site_url('admin/page-sections') ?>"
+                   class="<?= url_is('admin/page-sections*') ? 'active' : '' ?>">
+                    Page Sections
+                </a>
+
+                <div class="sidebar-heading">Website Settings</div>
+
+                <a href="<?= site_url('admin/design-settings') ?>"
+                   class="<?= url_is('admin/design-settings*') ? 'active' : '' ?>">
+                    Design Settings
+                </a>
+
+                <a href="<?= site_url('admin/media') ?>"
+                   class="<?= url_is('admin/media*') ? 'active' : '' ?>">
+                    Media
+                </a>
+
+                <a href="<?= site_url('admin/domains') ?>"
+                   class="<?= url_is('admin/domains*') ? 'active' : '' ?>">
+                    Domains
+                </a>
+
+                <a href="#" class="disabled">
+                    Settings
+                </a>
 
             </div>
         </aside>
@@ -113,12 +166,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
