@@ -1,0 +1,1097 @@
+﻿{
+    "project":  "single-page-cms-chatgpt",
+    "root":  "C:\\wamp64\\www\\project\\single-page-cms-chatgpt",
+    "generated_at":  "2026-11-25 12:38:45",
+    "total_folders":  59,
+    "total_files":  170,
+    "git_branch":  "main",
+    "git_status":  [
+                       " M app/Config/Routes.php",
+                       "?? app/Controllers/Admin/SitePageSection.php",
+                       "?? app/Views/admin/site_page_section/",
+                       "?? source/"
+                   ],
+    "folders":  [
+                    "app",
+                    "app/Config",
+                    "app/Config/Boot",
+                    "app/Controllers",
+                    "app/Controllers/Admin",
+                    "app/Controllers/Api",
+                    "app/Controllers/Website",
+                    "app/Database",
+                    "app/Database/Migrations",
+                    "app/Database/Seeds",
+                    "app/Filters",
+                    "app/Helpers",
+                    "app/Language",
+                    "app/Language/en",
+                    "app/Libraries",
+                    "app/Models",
+                    "app/Services",
+                    "app/ThirdParty",
+                    "app/Views",
+                    "app/Views/admin",
+                    "app/Views/admin/dashboard",
+                    "app/Views/admin/layouts",
+                    "app/Views/admin/section_type",
+                    "app/Views/admin/section_variation",
+                    "app/Views/admin/site_design_setting",
+                    "app/Views/admin/site_domain",
+                    "app/Views/admin/site_media",
+                    "app/Views/admin/site_page",
+                    "app/Views/admin/site_page_section",
+                    "app/Views/admin/site_section",
+                    "app/Views/admin/template",
+                    "app/Views/admin/template_section_variation",
+                    "app/Views/admin/website",
+                    "app/Views/errors",
+                    "app/Views/errors/cli",
+                    "app/Views/errors/html",
+                    "app/Views/website",
+                    "app/Views/website/layouts",
+                    "app/Views/website/sections",
+                    "public",
+                    "public/uploads",
+                    "source",
+                    "tests",
+                    "tests/_support",
+                    "tests/_support/Database",
+                    "tests/_support/Database/Migrations",
+                    "tests/_support/Database/Seeds",
+                    "tests/_support/Libraries",
+                    "tests/_support/Models",
+                    "tests/database",
+                    "tests/session",
+                    "tests/unit",
+                    "writable",
+                    "writable/cache",
+                    "writable/debugbar",
+                    "writable/logs",
+                    "writable/session",
+                    "writable/uploads",
+                    "writable/uploads/1"
+                ],
+    "files":  [
+                  {
+                      "path":  ".gitignore",
+                      "extension":  ".gitignore",
+                      "size_bytes":  1894,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/.htaccess",
+                      "extension":  ".htaccess",
+                      "size_bytes":  118,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Common.php",
+                      "extension":  ".php",
+                      "size_bytes":  521,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/App.php",
+                      "extension":  ".php",
+                      "size_bytes":  7906,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Autoload.php",
+                      "extension":  ".php",
+                      "size_bytes":  3009,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Boot/development.php",
+                      "extension":  ".php",
+                      "size_bytes":  1362,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Boot/production.php",
+                      "extension":  ".php",
+                      "size_bytes":  1005,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Boot/testing.php",
+                      "extension":  ".php",
+                      "size_bytes":  1444,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Cache.php",
+                      "extension":  ".php",
+                      "size_bytes":  7251,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Constants.php",
+                      "extension":  ".php",
+                      "size_bytes":  3640,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/ContentSecurityPolicy.php",
+                      "extension":  ".php",
+                      "size_bytes":  5239,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Cookie.php",
+                      "extension":  ".php",
+                      "size_bytes":  3546,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Cors.php",
+                      "extension":  ".php",
+                      "size_bytes":  3511,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/CURLRequest.php",
+                      "extension":  ".php",
+                      "size_bytes":  1074,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Database.php",
+                      "extension":  ".php",
+                      "size_bytes":  6331,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/DocTypes.php",
+                      "extension":  ".php",
+                      "size_bytes":  3058,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Email.php",
+                      "extension":  ".php",
+                      "size_bytes":  2456,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Encryption.php",
+                      "extension":  ".php",
+                      "size_bytes":  3570,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Events.php",
+                      "extension":  ".php",
+                      "size_bytes":  1956,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Exceptions.php",
+                      "extension":  ".php",
+                      "size_bytes":  4001,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Feature.php",
+                      "extension":  ".php",
+                      "size_bytes":  1024,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Filters.php",
+                      "extension":  ".php",
+                      "size_bytes":  3334,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/ForeignCharacters.php",
+                      "extension":  ".php",
+                      "size_bytes":  174,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Format.php",
+                      "extension":  ".php",
+                      "size_bytes":  2560,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Generators.php",
+                      "extension":  ".php",
+                      "size_bytes":  2133,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Honeypot.php",
+                      "extension":  ".php",
+                      "size_bytes":  855,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Hostnames.php",
+                      "extension":  ".php",
+                      "size_bytes":  2243,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Images.php",
+                      "extension":  ".php",
+                      "size_bytes":  756,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Kint.php",
+                      "extension":  ".php",
+                      "size_bytes":  1887,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Logger.php",
+                      "extension":  ".php",
+                      "size_bytes":  6060,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Migrations.php",
+                      "extension":  ".php",
+                      "size_bytes":  2156,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Mimes.php",
+                      "extension":  ".php",
+                      "size_bytes":  15756,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Modules.php",
+                      "extension":  ".php",
+                      "size_bytes":  2296,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Optimize.php",
+                      "extension":  ".php",
+                      "size_bytes":  1008,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Pager.php",
+                      "extension":  ".php",
+                      "size_bytes":  1189,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Paths.php",
+                      "extension":  ".php",
+                      "size_bytes":  3334,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Publisher.php",
+                      "extension":  ".php",
+                      "size_bytes":  807,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Routes.php",
+                      "extension":  ".php",
+                      "size_bytes":  2010,
+                      "modified":  "2026-11-25 08:28:47"
+                  },
+                  {
+                      "path":  "app/Config/Routing.php",
+                      "extension":  ".php",
+                      "size_bytes":  3949,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Security.php",
+                      "extension":  ".php",
+                      "size_bytes":  2853,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Services.php",
+                      "extension":  ".php",
+                      "size_bytes":  921,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Session.php",
+                      "extension":  ".php",
+                      "size_bytes":  4640,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Toolbar.php",
+                      "extension":  ".php",
+                      "size_bytes":  5775,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/UserAgents.php",
+                      "extension":  ".php",
+                      "size_bytes":  10327,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/Validation.php",
+                      "extension":  ".php",
+                      "size_bytes":  1192,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/View.php",
+                      "extension":  ".php",
+                      "size_bytes":  2902,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Config/WorkerMode.php",
+                      "extension":  ".php",
+                      "size_bytes":  1722,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/Dashboard.php",
+                      "extension":  ".php",
+                      "size_bytes":  208,
+                      "modified":  "2026-11-24 16:36:40"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SectionType.php",
+                      "extension":  ".php",
+                      "size_bytes":  588,
+                      "modified":  "2026-11-24 20:16:10"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SectionVariation.php",
+                      "extension":  ".php",
+                      "size_bytes":  751,
+                      "modified":  "2026-11-24 20:18:18"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SiteDesignSetting.php",
+                      "extension":  ".php",
+                      "size_bytes":  929,
+                      "modified":  "2026-11-24 20:36:38"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SiteDomain.php",
+                      "extension":  ".php",
+                      "size_bytes":  7540,
+                      "modified":  "2026-11-25 02:58:53"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SiteMedia.php",
+                      "extension":  ".php",
+                      "size_bytes":  6927,
+                      "modified":  "2026-11-24 21:51:05"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SitePage.php",
+                      "extension":  ".php",
+                      "size_bytes":  6378,
+                      "modified":  "2026-11-25 03:30:41"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SitePageSection.php",
+                      "extension":  ".php",
+                      "size_bytes":  4591,
+                      "modified":  "2026-11-25 08:35:13"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/SiteSection.php",
+                      "extension":  ".php",
+                      "size_bytes":  926,
+                      "modified":  "2026-11-24 20:23:16"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/Template.php",
+                      "extension":  ".php",
+                      "size_bytes":  583,
+                      "modified":  "2026-11-24 16:46:54"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/TemplateSectionVariation.php",
+                      "extension":  ".php",
+                      "size_bytes":  1125,
+                      "modified":  "2026-11-24 20:20:36"
+                  },
+                  {
+                      "path":  "app/Controllers/Admin/Website.php",
+                      "extension":  ".php",
+                      "size_bytes":  652,
+                      "modified":  "2026-11-24 16:42:27"
+                  },
+                  {
+                      "path":  "app/Controllers/BaseController.php",
+                      "extension":  ".php",
+                      "size_bytes":  1480,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Controllers/Home.php",
+                      "extension":  ".php",
+                      "size_bytes":  161,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Database/Migrations/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Database/Seeds/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Filters/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Helpers/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  134,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Language/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Language/en/Validation.php",
+                      "extension":  ".php",
+                      "size_bytes":  115,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Libraries/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Models/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/ThirdParty/.gitkeep",
+                      "extension":  ".gitkeep",
+                      "size_bytes":  0,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/admin/dashboard/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  947,
+                      "modified":  "2026-11-24 16:40:25"
+                  },
+                  {
+                      "path":  "app/Views/admin/layouts/main.php",
+                      "extension":  ".php",
+                      "size_bytes":  4845,
+                      "modified":  "2026-11-25 08:40:39"
+                  },
+                  {
+                      "path":  "app/Views/admin/section_type/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2074,
+                      "modified":  "2026-11-24 20:16:31"
+                  },
+                  {
+                      "path":  "app/Views/admin/section_variation/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2204,
+                      "modified":  "2026-11-24 20:18:35"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_design_setting/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2074,
+                      "modified":  "2026-11-24 20:36:52"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_domain/create.php",
+                      "extension":  ".php",
+                      "size_bytes":  2821,
+                      "modified":  "2026-11-25 02:44:31"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_domain/edit.php",
+                      "extension":  ".php",
+                      "size_bytes":  2698,
+                      "modified":  "2026-11-25 02:46:32"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_domain/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  4191,
+                      "modified":  "2026-11-25 03:00:36"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_media/create.php",
+                      "extension":  ".php",
+                      "size_bytes":  1740,
+                      "modified":  "2026-11-24 20:43:58"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_media/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  4329,
+                      "modified":  "2026-11-24 21:33:03"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_page/create.php",
+                      "extension":  ".php",
+                      "size_bytes":  3305,
+                      "modified":  "2026-11-25 03:19:34"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_page/edit.php",
+                      "extension":  ".php",
+                      "size_bytes":  4406,
+                      "modified":  "2026-11-25 03:22:42"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_page/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  3068,
+                      "modified":  "2026-11-25 03:30:20"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_page_section/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2094,
+                      "modified":  "2026-11-25 08:27:04"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_page_section/manage.php",
+                      "extension":  ".php",
+                      "size_bytes":  4423,
+                      "modified":  "2026-11-25 08:38:07"
+                  },
+                  {
+                      "path":  "app/Views/admin/site_section/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2470,
+                      "modified":  "2026-11-24 20:23:33"
+                  },
+                  {
+                      "path":  "app/Views/admin/template/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2169,
+                      "modified":  "2026-11-24 16:47:15"
+                  },
+                  {
+                      "path":  "app/Views/admin/template_section_variation/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  2310,
+                      "modified":  "2026-11-24 20:20:58"
+                  },
+                  {
+                      "path":  "app/Views/admin/website/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  1691,
+                      "modified":  "2026-11-24 16:42:47"
+                  },
+                  {
+                      "path":  "app/Views/errors/cli/error_404.php",
+                      "extension":  ".php",
+                      "size_bytes":  102,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/cli/error_exception.php",
+                      "extension":  ".php",
+                      "size_bytes":  2207,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/cli/production.php",
+                      "extension":  ".php",
+                      "size_bytes":  139,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/html/debug.css",
+                      "extension":  ".css",
+                      "size_bytes":  3575,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/html/debug.js",
+                      "extension":  ".js",
+                      "size_bytes":  2820,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/html/error_400.php",
+                      "extension":  ".php",
+                      "size_bytes":  1997,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/html/error_404.php",
+                      "extension":  ".php",
+                      "size_bytes":  2039,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/html/error_exception.php",
+                      "extension":  ".php",
+                      "size_bytes":  16998,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/errors/html/production.php",
+                      "extension":  ".php",
+                      "size_bytes":  500,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "app/Views/welcome_message.php",
+                      "extension":  ".php",
+                      "size_bytes":  17352,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "builds",
+                      "extension":  "",
+                      "size_bytes":  4129,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "composer.json",
+                      "extension":  ".json",
+                      "size_bytes":  1088,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "composer.lock",
+                      "extension":  ".lock",
+                      "size_bytes":  77120,
+                      "modified":  "2026-11-24 16:09:02"
+                  },
+                  {
+                      "path":  "env",
+                      "extension":  "",
+                      "size_bytes":  2381,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "LICENSE",
+                      "extension":  "",
+                      "size_bytes":  1162,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "phpunit.dist.xml",
+                      "extension":  ".xml",
+                      "size_bytes":  2422,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "preload.php",
+                      "extension":  ".php",
+                      "size_bytes":  3403,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "public/.htaccess",
+                      "extension":  ".htaccess",
+                      "size_bytes":  1661,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "public/favicon.ico",
+                      "extension":  ".ico",
+                      "size_bytes":  5430,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "public/index.php",
+                      "extension":  ".php",
+                      "size_bytes":  1730,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "public/robots.txt",
+                      "extension":  ".txt",
+                      "size_bytes":  25,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "README.md",
+                      "extension":  ".md",
+                      "size_bytes":  3088,
+                      "modified":  "2026-11-24 16:25:29"
+                  },
+                  {
+                      "path":  "source/single_page_cms_chatgpt.sql",
+                      "extension":  ".sql",
+                      "size_bytes":  31456,
+                      "modified":  "2026-11-25 09:48:46"
+                  },
+                  {
+                      "path":  "spark",
+                      "extension":  "",
+                      "size_bytes":  2668,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/.htaccess",
+                      "extension":  ".htaccess",
+                      "size_bytes":  118,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/_support/Database/Migrations/2020-02-22-222222_example_migration.php",
+                      "extension":  ".php",
+                      "size_bytes":  1169,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/_support/Database/Seeds/ExampleSeeder.php",
+                      "extension":  ".php",
+                      "size_bytes":  1213,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/_support/Libraries/ConfigReader.php",
+                      "extension":  ".php",
+                      "size_bytes":  323,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/_support/Models/ExampleModel.php",
+                      "extension":  ".php",
+                      "size_bytes":  554,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/database/ExampleDatabaseTest.php",
+                      "extension":  ".php",
+                      "size_bytes":  1226,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/README.md",
+                      "extension":  ".md",
+                      "size_bytes":  4734,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/session/ExampleSessionTest.php",
+                      "extension":  ".php",
+                      "size_bytes":  323,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "tests/unit/HealthTest.php",
+                      "extension":  ".php",
+                      "size_bytes":  1440,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/.htaccess",
+                      "extension":  ".htaccess",
+                      "size_bytes":  118,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/cache/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795575971.624915.json",
+                      "extension":  ".json",
+                      "size_bytes":  58905,
+                      "modified":  "2026-11-25 08:36:11"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795575976.515637.json",
+                      "extension":  ".json",
+                      "size_bytes":  45990,
+                      "modified":  "2026-11-25 08:36:16"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795575976.662075.json",
+                      "extension":  ".json",
+                      "size_bytes":  58947,
+                      "modified":  "2026-11-25 08:36:16"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795575977.466622.json",
+                      "extension":  ".json",
+                      "size_bytes":  51727,
+                      "modified":  "2026-11-25 08:36:17"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795575979.009685.json",
+                      "extension":  ".json",
+                      "size_bytes":  58916,
+                      "modified":  "2026-11-25 08:36:19"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576100.145624.json",
+                      "extension":  ".json",
+                      "size_bytes":  60070,
+                      "modified":  "2026-11-25 08:38:20"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576106.151502.json",
+                      "extension":  ".json",
+                      "size_bytes":  46043,
+                      "modified":  "2026-11-25 08:38:26"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576106.342686.json",
+                      "extension":  ".json",
+                      "size_bytes":  60067,
+                      "modified":  "2026-11-25 08:38:26"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576115.569523.json",
+                      "extension":  ".json",
+                      "size_bytes":  46046,
+                      "modified":  "2026-11-25 08:38:35"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576115.696402.json",
+                      "extension":  ".json",
+                      "size_bytes":  60073,
+                      "modified":  "2026-11-25 08:38:35"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576117.292491.json",
+                      "extension":  ".json",
+                      "size_bytes":  51722,
+                      "modified":  "2026-11-25 08:38:37"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576118.877789.json",
+                      "extension":  ".json",
+                      "size_bytes":  59945,
+                      "modified":  "2026-11-25 08:38:38"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576246.892166.json",
+                      "extension":  ".json",
+                      "size_bytes":  51134,
+                      "modified":  "2026-11-25 08:40:46"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576251.446005.json",
+                      "extension":  ".json",
+                      "size_bytes":  46375,
+                      "modified":  "2026-11-25 08:40:51"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576256.910772.json",
+                      "extension":  ".json",
+                      "size_bytes":  58090,
+                      "modified":  "2026-11-25 08:40:56"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576259.487425.json",
+                      "extension":  ".json",
+                      "size_bytes":  46377,
+                      "modified":  "2026-11-25 08:40:59"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576264.994083.json",
+                      "extension":  ".json",
+                      "size_bytes":  51920,
+                      "modified":  "2026-11-25 08:41:04"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576267.378346.json",
+                      "extension":  ".json",
+                      "size_bytes":  51705,
+                      "modified":  "2026-11-25 08:41:07"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576270.523747.json",
+                      "extension":  ".json",
+                      "size_bytes":  51932,
+                      "modified":  "2026-11-25 08:41:10"
+                  },
+                  {
+                      "path":  "writable/debugbar/debugbar_1795576275.911820.json",
+                      "extension":  ".json",
+                      "size_bytes":  51114,
+                      "modified":  "2026-11-25 08:41:15"
+                  },
+                  {
+                      "path":  "writable/debugbar/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/logs/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/logs/log-2026-11-24.log",
+                      "extension":  ".log",
+                      "size_bytes":  7665,
+                      "modified":  "2026-11-25 03:31:05"
+                  },
+                  {
+                      "path":  "writable/logs/log-2026-11-25.log",
+                      "extension":  ".log",
+                      "size_bytes":  2668,
+                      "modified":  "2026-11-25 08:38:38"
+                  },
+                  {
+                      "path":  "writable/session/ci_session04cff2d969fc0fe6d3e7f640b6dc83c9",
+                      "extension":  "",
+                      "size_bytes":  118,
+                      "modified":  "2026-11-24 21:57:42"
+                  },
+                  {
+                      "path":  "writable/session/ci_session094a1aea8c5613e9ea3813c7a96a9db2",
+                      "extension":  "",
+                      "size_bytes":  135,
+                      "modified":  "2026-11-25 08:38:38"
+                  },
+                  {
+                      "path":  "writable/session/ci_session0a542392dca8d0b3d9af2227e7ece73f",
+                      "extension":  "",
+                      "size_bytes":  134,
+                      "modified":  "2026-11-25 08:35:38"
+                  },
+                  {
+                      "path":  "writable/session/ci_session3590617b71e1ab9cd9c6e62cf7a76b33",
+                      "extension":  "",
+                      "size_bytes":  186,
+                      "modified":  "2026-11-25 03:31:05"
+                  },
+                  {
+                      "path":  "writable/session/ci_session4d455cd842f8f8912e7b6c0627abd5b0",
+                      "extension":  "",
+                      "size_bytes":  186,
+                      "modified":  "2026-11-25 03:25:01"
+                  },
+                  {
+                      "path":  "writable/session/ci_session507f0d29b29dd8434aaa8de9579b75c1",
+                      "extension":  "",
+                      "size_bytes":  120,
+                      "modified":  "2026-11-25 02:56:04"
+                  },
+                  {
+                      "path":  "writable/session/ci_session5d04fbb2801bb1d7120ce31047225b1b",
+                      "extension":  "",
+                      "size_bytes":  118,
+                      "modified":  "2026-11-24 21:51:19"
+                  },
+                  {
+                      "path":  "writable/session/ci_session73970819f0d49155607d2557eac6c379",
+                      "extension":  "",
+                      "size_bytes":  118,
+                      "modified":  "2026-11-24 21:57:42"
+                  },
+                  {
+                      "path":  "writable/session/ci_session879ef38de8b1cebcb1b45f4752e9cbea",
+                      "extension":  "",
+                      "size_bytes":  186,
+                      "modified":  "2026-11-25 03:31:05"
+                  },
+                  {
+                      "path":  "writable/session/ci_session9e925e869aba7425db5e32b4b562ebef",
+                      "extension":  "",
+                      "size_bytes":  188,
+                      "modified":  "2026-11-25 03:01:22"
+                  },
+                  {
+                      "path":  "writable/session/ci_sessionaf55a30d4efc037d90e90f1c05beac94",
+                      "extension":  "",
+                      "size_bytes":  184,
+                      "modified":  "2026-11-25 02:48:37"
+                  },
+                  {
+                      "path":  "writable/session/ci_sessionb3550e007a7a2c5d0579e8b5e367a2a5",
+                      "extension":  "",
+                      "size_bytes":  188,
+                      "modified":  "2026-11-25 03:18:08"
+                  },
+                  {
+                      "path":  "writable/session/ci_sessionb876e3fb8f2524d16281ecd9eed7d417",
+                      "extension":  "",
+                      "size_bytes":  118,
+                      "modified":  "2026-11-25 02:42:27"
+                  },
+                  {
+                      "path":  "writable/session/ci_sessionddf7e2dd89df3229c6fb2ee5f27aae4b",
+                      "extension":  "",
+                      "size_bytes":  118,
+                      "modified":  "2026-11-24 21:45:48"
+                  },
+                  {
+                      "path":  "writable/session/ci_sessionf16310ce9960e06aa5a6241cc9744e68",
+                      "extension":  "",
+                      "size_bytes":  186,
+                      "modified":  "2026-11-24 21:33:13"
+                  },
+                  {
+                      "path":  "writable/session/ci_sessionfd8a08e1b19777021ecf96b1a571e0d7",
+                      "extension":  "",
+                      "size_bytes":  118,
+                      "modified":  "2026-11-24 21:39:49"
+                  },
+                  {
+                      "path":  "writable/session/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  },
+                  {
+                      "path":  "writable/uploads/1/1795533432_90a5b3467656d1ec3d7d.jpeg",
+                      "extension":  ".jpeg",
+                      "size_bytes":  126441,
+                      "modified":  "2026-11-24 20:47:12"
+                  },
+                  {
+                      "path":  "writable/uploads/index.html",
+                      "extension":  ".html",
+                      "size_bytes":  131,
+                      "modified":  "2026-10-09 21:11:56"
+                  }
+              ]
+}

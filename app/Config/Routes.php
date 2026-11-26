@@ -21,6 +21,11 @@ $routes->get('admin/section-variations', 'Admin\SectionVariation::index');
 $routes->get('admin/template-section-variations', 'Admin\TemplateSectionVariation::index');
 
 $routes->get('admin/site-sections', 'Admin\SiteSection::index');
+$routes->get('admin/site-sections/create', 'Admin\SiteSection::create');
+$routes->post('admin/site-sections/store', 'Admin\SiteSection::store');
+$routes->get('admin/site-sections/edit/(:num)', 'Admin\SiteSection::edit/$1');
+$routes->post('admin/site-sections/update/(:num)', 'Admin\SiteSection::update/$1');
+$routes->post('admin/site-sections/delete/(:num)', 'Admin\SiteSection::delete/$1');
 
 $routes->get('admin/design-settings', 'Admin\SiteDesignSetting::index');
 
@@ -34,6 +39,9 @@ $routes->get('admin/media/view/(:num)', 'Admin\SiteMedia::view/$1');
 
 $routes->get('admin/domains', 'Admin\SiteDomain::index');
 $routes->get('admin/pages', 'Admin\SitePage::index');
+$routes->get('admin/page-sections', 'Admin\SitePageSection::index');
+$routes->get('admin/page-sections/manage/(:num)', 'Admin\SitePageSection::manage/$1');
+$routes->post('admin/page-sections/save/(:num)', 'Admin\SitePageSection::save/$1');
 $routes->get('admin/pages/create', 'Admin\SitePage::create');
 $routes->post('admin/pages/store', 'Admin\SitePage::store');
 $routes->get('admin/pages/edit/(:num)', 'Admin\SitePage::edit/$1');
@@ -45,4 +53,15 @@ $routes->get('admin/domains/edit/(:num)', 'Admin\SiteDomain::edit/$1');
 $routes->post('admin/domains/update/(:num)', 'Admin\SiteDomain::update/$1');
 
 $routes->post('admin/domains/delete/(:num)', 'Admin\SiteDomain::delete/$1');
+
+
+
+// Public website pages
+$routes->post('contact/submit', 'Website\Contact::submit');
+$routes->get('(:segment)', 'Home::page/$1');
+
+$routes->get('admin/contact-submissions', 'Admin\ContactSubmission::index');
+
+
+$routes->post('admin/contact-submissions/update-status/(:num)', 'Admin\ContactSubmission::updateStatus/$1');
 
